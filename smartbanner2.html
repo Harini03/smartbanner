@@ -21,10 +21,13 @@
     
     MY APP
     <script>
-      function test(){
+      var test = function(){
         alert(smartbanner);
         alert("hii");
         console.log(document.getElementById("smartbanner"));
+        var starDiv = document.createElement('div');
+        starDiv.innerHTML="<h2>Star Div here</h2>"
+        document.querySelector(".smartbanner__info__price").appendChild(starDiv);
       }
       window.addEventListener('smartbanner.view', test);
       if(typeof smartbanner !="undefined"){
