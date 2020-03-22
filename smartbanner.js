@@ -327,6 +327,7 @@ function () {
 
 
       if (!(this.platformEnabled || this.userAgentIncluded)) {
+        alert("platform/useragent check");
         return false;
       }
 
