@@ -2,7 +2,6 @@
   <head>
     <title>MyPage</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="smartbanner:api" content="true">
     <meta name="smartbanner:title" content="My Verizon App">
     <meta name="smartbanner:author" content="Manage your account, Get exclusive rewards and more">
     <meta name="smartbanner:icon-apple" content="https://ss7.vzw.com/is/image/VerizonWireless/persistent-smart-banner-app-icon-03112020-3x?&scl=1&fmt=png-alpha">
@@ -27,7 +26,7 @@
         alert("hii");
         console.log(document.getElementById("smartbanner"));
       }
-      document.addEventListener('smartbanner.view', test);
+      window.addEventListener('smartbanner.view', test);
       if(typeof smartbanner !="undefined"){
         smartbanner.publish();
         alert("smartbanner");
