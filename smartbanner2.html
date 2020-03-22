@@ -11,7 +11,7 @@
     <meta name="smartbanner:button-url-google" content="https://m.vzw.com/beEuZpf6f">
     <meta name="smartbanner:enabled-platforms" content="android,ios">
     <meta name="smartbanner:custom-design-modifier" content="mysite.com">
-    <meta name="smartbanner:api" content="true">
+    
     <meta name="smartbanner:close-label" content="Close">
     <link rel="stylesheet" href="smartbanner.css">
     <script src="smartbanner.js"></script>
@@ -20,10 +20,10 @@
     
     MY APP
     <script>
-      if(typeof smartbanner != "undefined"){
+      function test(){
         console.log(smartbanner);
-        smartbanner.publish();
       }
+      document.addEventListener('smartbanner.view', test);
     </script>
   </body>
 </html>
